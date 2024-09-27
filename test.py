@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Step 1: Load the image
-image = cv2.imread('red.png')
+image = cv2.imread('images/red.png')
 
 # Step 2: Convert the image to HSV color space
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -84,5 +84,5 @@ point2r = (int(x0r + 1000 * vxr), int(y0l + 1000 * vyr))  # End point of the lin
 cv2.line(image, point1l, point2l, (0, 0, 255), 2)
 cv2.line(image, point1r, point2r, (0, 0, 255), 2)
 # Step 10: Save the image
-cv2.imwrite("answer.png", image)
+cv2.imwrite("images/answer.png", image)
 
