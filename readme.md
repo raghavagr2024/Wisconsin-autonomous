@@ -1,0 +1,4 @@
+I first did some research and chose to go with just a contour detection system, but that didn't work because of the colors. I decided to then first only draw the objects that fit my upper and lower bounds for my HSV ranges for the color of the cones. After I got the color mask, I then used a contour filter for cone like objects and then filtered tiny specks so I could have just the cones. I then got the centers of all the cones and then split them based on the center's split to make 2 lines. I then got the best fit line for the right and left centroids and drew the lines over the image. Although I could've used only one type of detection, I feel the use of contour and color allowed me to get much more precise results. I used the numpy and opencv libraries for this project.
+
+
+//add image
